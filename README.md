@@ -15,6 +15,7 @@ Proyek Data Analyst permainan catur ini fokus pada eksplorasi hubungan antara ra
 6. Mengembangkan kemampuan interpretasi statistik dalam konteks permainan strategi
 
 ## Struktur Proyek
+
 chess-game-analysis/
 ├── data/ # Dataset permainan catur
 │ └── games.csv # Koleksi permainan dalam format PGN
@@ -32,19 +33,19 @@ chess-game-analysis/
 ## Analisis Utama
 
 ### 1. Analisis Distribusi Rating Pemain
-![Distribusi Rating](images/distribusi_rating.png)
+![Distribusi Rating](images/distribusi_rating_player.png)
 - Distribusi rating pemain putih dan hitam
 - Identifikasi rentang rating yang paling umum
 - Perbandingan karakteristik pemain berdasarkan tingkat skill
 
 ### 2. Analisis Hasil Permainan
-![Hasil Permainan](images/hasil_permainan.png)
+![Hasil Permainan](images/pie_chart_hasil_permainan.png)
 - Persentase kemenangan putih vs hitam
 - Frekuensi hasil seri
 - Hubungan antara tingkat skill dan hasil akhir permainan
 
 ### 3. Hubungan Rating vs Jumlah Langkah
-![Rating vs Jumlah Langkah](images/rating_vs_jumlah_langkah.png)
+![Rating vs Jumlah Langkah](images/hubungan_rating_langkah.png)
 - Korelasi antara rating pemain dan panjang permainan
 - Apakah pemain dengan rating lebih tinggi cenderung menyelesaikan permainan lebih cepat?
 - Pola jumlah langkah untuk berbagai tingkat skill
@@ -56,7 +57,7 @@ chess-game-analysis/
 - Pengaruh ketidakseimbangan skill terhadap dinamika permainan
 
 ### 5. Perbedaan Rating vs Hasil Permainan
-![Perbedaan Rating vs Hasil](images/perbedaan_rating_vs_hasil.png)
+![Perbedaan Rating vs Hasil](images/selisih_rating_menang.png)
 - Pengaruh selisih rating terhadap peluang menang
 - Prediksi hasil berdasarkan perbedaan skill
 - Analisis kejutan ketika pemain dengan rating lebih rendah menang
@@ -85,14 +86,13 @@ Karakteristik dataset:
 - **Jupyter Notebook** - Lingkungan analisis interaktif
 
 ## Cara Menjalankan
+
 1. Clone repositori:
 ```bash
 git clone https://github.com/mrMaula/chess-game-analysis.git
-
 2. Install dependensi:
 ```bash
 pip install -r requirements.txt
-
 3. Jalankan notebook:
 ```bash
 jupyter notebook chessGame_analysis.ipynb
